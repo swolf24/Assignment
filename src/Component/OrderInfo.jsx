@@ -1,8 +1,8 @@
 import React from 'react';
 
-function OrderInfo({ selectedProduct, quantity, total }) {
+function OrderInfo({ productName, quantity, total }) {
   return (
-    <div className="order-info">
+    <div>
       <h3>Order info</h3>
       <table className="order-info-table">
         <thead>
@@ -14,7 +14,7 @@ function OrderInfo({ selectedProduct, quantity, total }) {
         </thead>
         <tbody>
           <tr>
-            <td>{selectedProduct}</td>
+            <td>{productName}</td>
             <td>{quantity}</td>
             <td>{total}€</td>
           </tr>

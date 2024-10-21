@@ -62,6 +62,7 @@ function ProductForm() {
       <OrderInfo productName={nameP[selectedProductIndex]} quantity={quantity} total={total} />
     </div>
   );
+  
 }
 
 export default ProductForm;

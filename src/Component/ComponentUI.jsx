@@ -1,16 +1,12 @@
 import React from 'react';
-import Header from './OrderForm'; // Importiere das OrderForm als Kindkomponente
-import OrderForm from './OrderForm';
 
-function ComponentUI() {
-  const productImage = ""; // URL für Header Bild, falls benötigt
-
+function Header({ image, title }) {
   return (
-    <div className="ComponentUI">
-      <Header image={productImage} title="Welcome to the Product Page!" />
-      <OrderForm />
-    </div>
+    <header className="header">
+      <img src={image} alt="Header" className="header-image" />
+      <h1>{title}</h1>
+    </header>
   );
 }
 
-export default ComponentUI;
+export default Header;

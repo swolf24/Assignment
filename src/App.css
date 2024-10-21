@@ -1,0 +1,97 @@
+/* Gesamte App zentrieren */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hauptcontainer zum Zentrieren */
+.container {
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  align-items: center; /* Zentriert den Inhalt vertikal */
+  height: 100%; /* Benutze volle Höhe des Containers */
+  width: 100%; /* Benutze volle Breite des Containers */
+  box-sizing: border-box; /* Stellt sicher, dass Padding korrekt behandelt wird */
+}
+
+/* Inhalt-Box */
+.content-box {
+  border: 2px solid #000; /* Fügt einen sichtbaren Rahmen hinzu */
+  padding: 20px; /* Innenabstand */
+  max-width: 800px; /* Maximalbreite für die Box */
+  background-color: #fff; /* Hintergrundfarbe */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optionaler Schatten für einen 3D-Effekt */
+  margin: 0 auto; /* Zentriert die Box */
+  text-align: center; /* Zentriert den Text in der Box */
+}
+
+/* Form-Styling für die Produktauswahl */
+.product-form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%; /* Volle Breite */
+  max-width: 400px; /* Maximalbreite für das Formular */
+  margin: 0 auto; /* Zentriert das Formular */
+}
+
+/* Restliche Styles */
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 800px; /* Maximalbreite der App */
+  margin: 0 auto; /* Zentriert die App horizontal */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Zentriert den Header-Inhalt */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000; /* Dickere untere Grenze */
+  padding-bottom: 10px;
+}
+
+.header-image {
+  width: 100px; /* Größe des Bildes vergrößert */
+  height: 100px; /* Größe des Bildes vergrößert */
+  display: flex;
+  border-radius: 50%; /* Runde Form */
+  margin-right: 15px; /* Abstand zwischen Bild und Text */
+  object-fit: cover; /* Verhindert Verzerrung des Bildes */
+}
+
+.header h1 {
+  font-size: 24px; /* Schriftgröße des Titels */
+  margin: 0; /* Entferne zusätzlichen Rand */
+}
+
+.quantity-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Zentriert den Mengenwähler */
+}
+
+.quantity-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.quantity-display {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.order-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.order-info-table th,
+.order-info-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
